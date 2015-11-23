@@ -97,23 +97,6 @@
  |push_down_out|从下方推出|
  |push_left|推像左方|
 
-- 范围型的常量用枚举类定义，而不要直接用整型或字符，这样可以减少范围值的有效性检查。
-``` java
-// 用枚举类定义，Good
-public enum CouponType {
-    // 现金券
-    @SerializedName("1")
-    CASH,
-
-    // 抵用券
-    @SerializedName("2")
-    DEBIT,
-
-    // 折扣券
-    @SerializedName("3")
-    DISCOUNT
-}
-```
 
 
 ##注释
